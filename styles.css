@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    
+    height: 30rem;
+    width: 30rem;
+    background-image: url("https://media.istockphoto.com/id/1014875730/vector/clock-face-blank-hour-dial-dashes-mark-minutes-and-hours-simple-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=Z4E98A5tq-ANDKy7LHmp6YIpfRg9xcftPTfZVuMheow=");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before{
+    content:"";
+    background-color: black;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+}
+.hour,.minutes,.seconds{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+   
+}
+.hour{
+    height: 12rem;
+    width: 12rem;
+}
+.hour::before{
+    content: "";
+    background-color: brown;
+    height: 50%;
+    width: 6px;
+    border-radius: 50%;
+    
+}
+.minutes{
+    height: 14rem;
+    width: 14rem;
+}
+.minutes::before{
+    content: "";
+    background-color: grey;
+    height: 50%;
+    width: 4px;
+    border-radius: 50%;
+}
+.seconds{
+    height: 16rem;
+    width: 16rem;
+}
+.seconds::before{
+    content: "";
+    background-color: black;
+    height: 50%;
+    width: 3px;
+    border-radius: 50%;
+}
